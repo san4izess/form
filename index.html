@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Форма</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="myForm" onsubmit="return submitForm();">
+      <label for="name">Ім'я:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Введіть своє ім'я"
+        required
+      />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Введіть свій email"
+        required
+      />
+      <label>Ваші уподобання:</label>
+      <input type="checkbox" id="option1" name="option1" value="option1" />
+      <label for="option1">Опція 1</label>
+      <input type="checkbox" id="option2" name="option2" value="option2" />
+      <label for="option2">Опція 2</label>
+      <input type="checkbox" id="option3" name="option3" value="option3" />
+      <label for="option3">Опція 3</label>
+      <label for="message">Додатковий коментар:</label>
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Введіть свій коментар"
+      ></textarea>
+      <button type="submit">Надіслати</button>
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>
